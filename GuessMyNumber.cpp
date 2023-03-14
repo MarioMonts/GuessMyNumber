@@ -12,7 +12,7 @@ int main()
 
     srand(static_cast<unsigned int>(time(0)));
     int randomNumber = rand();
-    int secretNumber = (randomNumber % 200) + 1;
+    int secretNumber = (randomNumber % 300) + 1;
     int guess;
     int tries = 0;
 
@@ -24,7 +24,7 @@ int main()
     do
     {
 
-        cout << "\n ingresa un numero (1-200): " << endl;
+        cout << "\n ingresa un numero (1-300): " << endl;
         cin >> guess;
         tries++;
 
