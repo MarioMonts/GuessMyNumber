@@ -12,17 +12,19 @@ int main()
 
     srand(static_cast<unsigned int>(time(0)));
     int randomNumber = rand();
-    int secretNumber = (randomNumber % 100) + 1;
+    int secretNumber = (randomNumber % 200) + 1;
     int guess;
     int tries = 0;
 
     cout << "GUESS MY NUMBER" << endl;
     cout << "Adivina el numero en el menor numero de intentos posibles" << endl;
+     // Depurar 
 
+    cout << secretNumber;
     do
     {
 
-        cout << "\n ingresa un numero (1-100): " << endl;
+        cout << "\n ingresa un numero (1-200): " << endl;
         cin >> guess;
         tries++;
 
