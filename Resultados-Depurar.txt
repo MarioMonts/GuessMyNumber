@@ -1,0 +1,15 @@
+﻿'GuessMyNumber.exe' (Win32): 'C:\Users\ALUMNOS\Desktop\MarioMontes\ProgramacionII\GuessMyNumberBajado\GuessMyNumber\x64\Debug\GuessMyNumber.exe' cargado. Símbolos cargados.
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\ntdll.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\kernel32.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\KernelBase.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\msvcp140d.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\vcruntime140_1d.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\vcruntime140d.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\ucrtbased.dll' cargado. 
+El subproceso 0xd00 terminó con código 0 (0x0).
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\kernel.appcore.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\msvcrt.dll' cargado. 
+'GuessMyNumber.exe' (Win32): 'C:\Windows\System32\rpcrt4.dll' cargado. 
+El subproceso 0x1b80 terminó con código 0 (0x0).
+El subproceso 0x1914 terminó con código 0 (0x0).
+El programa '[5960] GuessMyNumber.exe' terminó con código 0 (0x0).
