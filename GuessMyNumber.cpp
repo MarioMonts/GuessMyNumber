@@ -3,10 +3,11 @@
 
 #include <iostream>
 #include <cstdlib> // Trabaja con numeros random
+#include <string>
 
 using namespace std;
 
-int GuessParams(int a, int b);
+int GuessParams(string question, int a, int b); //siempre se pone la funcion prototipada aqui y ABAJO del std; de arribita
 
 int main()
 {
@@ -28,9 +29,8 @@ int main()
     do
     {
 
-        guess = GuessParams(50, 200);
-        
-
+        guess = GuessParams("\nIngresa un numero ", 300, 50); //Aqui hay un error logico porque si el random no esta dentro de este rango,nunca voy a salir de este loop. el profe dijo que esta ok
+      
         tries++;
 
         veryClose = secretNumber - guess;
@@ -62,22 +62,25 @@ int main()
 
 
 
-    return 0;
+    
 
 }
 
 
-int GuessParams(int a, int b)
+int GuessParams(string question, int a, int b)
 {
-    int num;
+    int num = 0; /// Esta variable solo existe dentro de la funcion. Por lo tanto no puede usarse en el main
+    //si quisiera una variable global (que funcione en todos lados), tendria que ir arriba del main. Pero esto no es buena practica
+    //nunca hacer globales. Hay que hacer variables constantes. 
    
+    //Funciona al revés tambié, si pusiera una variable de main aquí, no la reconocería la función
 
     do {
 
-        cout << "\n ingresa un numero (1-100): " << endl;
+        cout << question << "entre " << b << " y " << a << endl;
         cin >> num;
 
-    } while (num > a || num < b); //el OR aqui no funcionaba porque no era posible. Se usa un AND
+    } while (num > a || num < b); //el AND aqui no funcionaba porque no era posible. Se usa un OR
 
     return num;
 
